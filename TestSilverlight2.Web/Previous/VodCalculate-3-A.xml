@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="yes"?>
+<ReportConditions>
+  <xs:schema id="ReportConditions" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="ReportConditions" msdata:IsDataSet="true" msdata:MainDataTable="Rpt" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Rpt">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CUSTID" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CUSTID1" type="xs:string" minOccurs="0" />
+                <xs:element name="FACISNO" type="xs:string" minOccurs="0" />
+                <xs:element name="MINSCREDIT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ADDCREDIT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TOTAL" type="xs:decimal" minOccurs="0" />
+                <xs:element name="OVERCREDIT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SEQNO" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Rpt>
+    <CUSTID>0</CUSTID>
+    <MINSCREDIT>0</MINSCREDIT>
+    <ADDCREDIT>0</ADDCREDIT>
+    <TOTAL>0</TOTAL>
+    <OVERCREDIT>0</OVERCREDIT>
+    <SEQNO>0</SEQNO>
+  </Rpt>
+</ReportConditions>

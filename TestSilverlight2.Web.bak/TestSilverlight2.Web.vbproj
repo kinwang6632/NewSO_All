@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{AA3A405B-0459-447E-845A-AF856FB4FF2B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TestSilverlight2.Web</RootNamespace>
+    <AssemblyName>TestSilverlight2.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <SilverlightApplicationList>
+    </SilverlightApplicationList>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TestSilverlight2.Web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TestSilverlight2.Web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CableSoft.BLL.Dynamic.Condition">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Dynamic.Condition.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Dynamic.DynamicUpdate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Dynamic.DynamicUpdate.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Dynamic.DynUpdateGrid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Dynamic.DynUpdateGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Dynamic.TextFileOut">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Dynamic.TextFileOut.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Language.SO01, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Language.SO01.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Language.SO11">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Language.SO11.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Language.SO21, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Language.SO21.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Language.SO22">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Language.SO22.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Language.SO31">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Language.SO31.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Language.SO51, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Language.SO51.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Language.SO52">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Language.SO52.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Language.SO53">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Language.SO53.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Language.SO61, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Language.SO61.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Utility">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.Log.Provider">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.Log.Provider.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.RIA.Dynamic.Condition.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.RIA.Dynamic.Condition.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.RIA.Dynamic.DynamicUpdate.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.RIA.Dynamic.DynamicUpdate.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.RIA.Dynamic.DynUpdateGrid.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.RIA.Dynamic.DynUpdateGrid.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.RIA.Dynamic.Grid.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.RIA.Dynamic.Grid.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.RIA.Dynamic.TextFileOut.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.RIA.Dynamic.TextFileOut.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Billing.Batch.EnterPay">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Billing.Batch.EnterPay.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Billing.ChangeClctEn">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Billing.ChangeClctEn.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Billing.LevelDiscount.ThirdDiscount">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Billing.LevelDiscount.ThirdDiscount.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Billing.ProduceCharge">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Billing.ProduceCharge.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.CodeSet.MFCode">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.CodeSet.MFCode.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Customer.Account">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Customer.Account.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Facility.bbCash.Credit">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Facility.bbCash.Credit.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Facility.ChangeFaci, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Facility.ChangeFaci.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Facility.Command, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Facility.Command.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Facility.CPEMAC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Facility.CPEMAC.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Facility.VOD.Calculate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Facility.VOD.Calculate.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Order.ChangePeriod">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Order.ChangePeriod.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Order.CopyOrder">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Order.CopyOrder.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Order.CutDate">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Order.CutDate.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Order.Deposit">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Order.Deposit.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Order.Edit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Order.Edit.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Order.Facility">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Order.Facility.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Wip.CallOk">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Wip.CallOk.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Wip.Maintain, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Wip.Maintain.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Billing.ACHAuthIn.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Billing.ACHAuthIn.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Billing.Batch.EnterPay.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Billing.Batch.EnterPay.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Billing.ChangeClctEn.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Billing.ChangeClctEn.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Billing.LevelDiscount.ThirdDiscount.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Billing.LevelDiscount.ThirdDiscount.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Billing.ProduceCharge.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Billing.ProduceCharge.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Billing.Simple.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Billing.Simple.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.CodeSet.MFCode.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.CodeSet.MFCode.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Customer.Account.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Customer.Account.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Customer.IntroMedia.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Customer.IntroMedia.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Facility.bbCash.Credit.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Facility.bbCash.Credit.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Facility.ChangeFaci.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Facility.ChangeFaci.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Facility.ChooseFaci.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Facility.ChooseFaci.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Facility.Command.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Facility.Command.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Facility.CPEMAC.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Facility.CPEMAC.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Facility.VOD.Calculate.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Facility.VOD.Calculate.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Order.ChangePeriod.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Order.ChangePeriod.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Order.CopyOrder.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Order.CopyOrder.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Order.CutDate.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Order.CutDate.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Order.Deposit.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Order.Deposit.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Order.Edit.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Order.Edit.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Order.Facility.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Order.Facility.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Wip.Callok.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Wip.Callok.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Wip.Maintain.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Wip.Maintain.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Wip.ResvTimePeriod.Web">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Wip.ResvTimePeriod.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.Utility.Connection">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.Utility.Connection.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.Utility.Cryptography, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.Utility.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.Utility.DataAccess">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.Utility.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.Utility.ErrorHandler">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\CableSoft.Utility.ErrorHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Printing.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DevExpress\DXperience 13.1\Bin\Framework\DevExpress.Xpf.Printing.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Printing.v13.1.Service, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DevExpress\DXperience 13.1\Bin\Framework\DevExpress.XtraCharts.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DevExpress\DXperience 13.1\Bin\Framework\DevExpress.XtraReports.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.1.LightSwitch.Server, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DevExpress\DXperience 13.1\Bin\Framework\DevExpress.XtraReports.v13.1.LightSwitch.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.1.Service, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DevExpress\DXperience 13.1\Bin\Framework\DevExpress.XtraReports.v13.1.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DevExpress\DXperience 13.1\Bin\Framework\DevExpress.XtraRichEdit.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DevExpress\DXperience 13.1\Bin\Framework\DevExpress.XtraRichEdit.v13.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v13.1.Printing, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DevExpress\DXperience 13.1\Bin\Framework\DevExpress.XtraRichEdit.v13.1.Printing.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\NewSO\Bin\Server\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Orphean.Log.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\NewSO\Bin\Server\Orphean.Log.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Silverlight.DataSetConnector">
+      <HintPath>..\..\..\..\NewSO\Bin\Server\Silverlight.DataSetConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.DomainServices.Hosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.DomainServices.Server, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\ExportService.mdb" />
+    <Content Include="App_Data\ReportService.mdb" />
+    <Content Include="CSReportService.svc" />
+    <Content Include="Silverlight.js" />
+    <Content Include="TestSilverlight2TestPage.aspx" />
+    <Content Include="TestSilverlight2TestPage.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connect.vb" />
+    <Compile Include="CSReportService.svc.vb">
+      <DependentUpon>CSReportService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="DomainService1.vb" />
+    <Compile Include="FileReceiver.ashx.vb">
+      <DependentUpon>FileReceiver.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QueryTable.vb" />
+    <Compile Include="SilverLightFaultBehavior.vb" />
+    <Compile Include="WriteText.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FileReceiver.ashx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Report\VodCalculate.repx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Previous\" />
+    <Folder Include="TXT\" />
+    <Folder Include="xls\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>7493</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

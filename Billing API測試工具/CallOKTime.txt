@@ -1,0 +1,80 @@
+{
+  "Main": [
+     {
+       "APIID": "100",
+       "Compcode": "3",
+       "Caller": "IVR",
+       "Seqno": "284",
+       "OrderNo": "201103030031967"
+     }
+    ],
+  "Device": [
+     {
+       "Facisno": "1685116028",
+       "FaciCode": "101"
+     },
+     {
+       "Facisno": "WD-WX11A60W7006",
+       "FaciCode": "103"
+     },
+     {
+       "Facisno": "1057131559",
+       "FaciCode": "102"
+     }
+    ]
+}
+==============================================================================
+{
+  "Main": [
+     {
+       "APIID": "101",
+       "Compcode": "3",
+       "Caller": "IVR",
+       "Seqno": "271",
+       "SNO": "201206ID0065019"
+     }
+    ],
+  "Device": [
+     {
+       "Facisno": "1685186346",
+       "FaciCode": "101"
+     },
+     {
+       "Facisno": "1057172471",
+       "FaciCode": "102"
+     }     
+    ]
+}
+==============================================================================
+201103060032108
+
+{
+  "Main": [
+     {
+       "APIID": "220",
+       "Compcode": "3",
+       "Caller": "IVR",
+       "Seqno": "500"
+     }
+],
+  "Order": [
+     {
+       "OrderNo": "201103060032108",
+       "SNo": null,
+       "ReturnCode": "999",
+       "ReturnDescCode": null,
+       "CATVReturnCode": null,
+       "CATVReturnDescCode": null,
+       "DTVReturnCode": "999",
+       "DTVReturnDescCode": null,
+       "CMReturnCode": null,
+       "CMReturnDescCode": null,
+       "CPReturnCode": null,
+       "CPReturnDescCode": null,
+       "WorkerEn": "05930412",
+       "SignEn": "05930412",
+       "SignDate": "2014/04/03",
+       "Note": null
+     }
+]
+}

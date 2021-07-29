@@ -1,0 +1,45 @@
+{
+  "Main": [ 
+     {
+       "APIID": "110",
+       "Compcode": "3",
+       "Caller": "IVR",
+       "Seqno": "154",
+       "Facisno": "1685144046"
+     }
+    ] 
+}
+
+========================================
+
+{
+  "Main": [ 
+     {
+       "APIID": "111",
+       "Compcode": "3",
+       "Caller": "IVR",
+       "Seqno": "155",
+       "Facisno": "1685144046"
+     }
+    ] 
+}
+
+========================================
+
+{
+  "Main": [ 
+     {
+       "APIID": "112",
+       "Compcode": "3",
+       "Caller": "IVR",
+       "Seqno": "156"
+     }],
+  "Channel": [ 
+     {
+       "Facisno": "1685144046",
+       "ChCode": "21,31,38",
+       "DVRFaci": null,
+       "DVRSize": null
+     }
+]
+}

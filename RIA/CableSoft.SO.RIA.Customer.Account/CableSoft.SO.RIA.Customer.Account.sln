@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CableSoft.SO.RIA.Customer.Account", "CableSoft.SO.RIA.Customer.Account", "{A79AB8A3-D41C-4AA2-A22D-ED1C13DC86C2}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CableSoft.SO.RIA.Customer.Account.Web", "..\CableSoft.SO.RIA.Customer.Account.Web\CableSoft.SO.RIA.Customer.Account.Web.vbproj", "{CA0AEBCB-4494-4787-9220-0B84A179BBA3}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CableSoft.SO.RIA.Customer.Account", "CableSoft.SO.RIA.Customer.Account.vbproj", "{5457F229-EA28-469F-9F76-9814E15CAC93}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CA0AEBCB-4494-4787-9220-0B84A179BBA3} = {CA0AEBCB-4494-4787-9220-0B84A179BBA3}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA0AEBCB-4494-4787-9220-0B84A179BBA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA0AEBCB-4494-4787-9220-0B84A179BBA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA0AEBCB-4494-4787-9220-0B84A179BBA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA0AEBCB-4494-4787-9220-0B84A179BBA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5457F229-EA28-469F-9F76-9814E15CAC93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5457F229-EA28-469F-9F76-9814E15CAC93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5457F229-EA28-469F-9F76-9814E15CAC93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5457F229-EA28-469F-9F76-9814E15CAC93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CA0AEBCB-4494-4787-9220-0B84A179BBA3} = {A79AB8A3-D41C-4AA2-A22D-ED1C13DC86C2}
+		{5457F229-EA28-469F-9F76-9814E15CAC93} = {A79AB8A3-D41C-4AA2-A22D-ED1C13DC86C2}
+	EndGlobalSection
+EndGlobal

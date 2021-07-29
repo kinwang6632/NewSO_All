@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="TestSilverlight.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    mc:Ignorable="d"
+    d:DesignHeight="800" d:DesignWidth="900"  xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol" xmlns:my="clr-namespace:CableComponent;assembly=CableComponent" xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit" xmlns:my1="clr-namespace:CableSoft.SO.SL.Facility.VODAccount;assembly=CableSoft.SO.SL.Facility.VODAccount" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" xmlns:csl="http://schemas.cablesoft/sl/list" xmlns:csg="http://schemas.cablesoft/sl/grid" xmlns:dxre="http://schemas.devexpress.com/winfx/2008/xaml/richedit" xmlns:my2="clr-namespace:CableSoft.SL.Common.Dynamic.Condition;assembly=CableSoft.SL.Common.Dynamic.Condition" xmlns:my3="clr-namespace:CableSoft.SO.SL.Wip.Maintain;assembly=CableSoft.SO.SL.Wip.Maintain" xmlns:my4="clr-namespace:CableSoft.SO.SL.Order.Deposit;assembly=CableSoft.SO.SL.Order.Deposit" xmlns:csb="http://schemas.cablesoft/sl/button" xmlns:my5="clr-namespace:CableSoft.SO.SL.Customer.Account;assembly=CableSoft.SO.SL.Customer.Account" xmlns:my6="clr-namespace:CableSoft.SL.Common.Dynamic.DynamicUpdate;assembly=CableSoft.SL.Common.Dynamic.DynamicUpdate" xmlns:my7="clr-namespace:CableSoft.SL.Common.Dynamic.Grid;assembly=CableSoft.SL.Common.Dynamic.Grid">
+    
+
+    <Grid x:Name="LayoutRoot" dxc:ThemeManager.ApplyApplicationTheme="True" Background="White"   >
+        
+        <Button Content="SO1131C"  Height="31" HorizontalAlignment="Left" Margin="27,42,0,0" Name="SO1131C" VerticalAlignment="Top" Width="113"   />
+        <Button Content="選擇設備" Height="23" HorizontalAlignment="Left" Margin="27,76,0,0" Name="btnChooseFaci" VerticalAlignment="Top" Width="113" />
+        <Button Content="SO1100G" Height="23" HorizontalAlignment="Left" Margin="29,196,0,0" Name="btnSO1100G" VerticalAlignment="Top" Width="75" />
+        <Button Content="SO1112A" Height="23" HorizontalAlignment="Left" Margin="29,225,0,0" Name="btnSO1112A" VerticalAlignment="Top" Width="75" />
+        <Button Content="SO1112A1" Height="20" HorizontalAlignment="Left" Margin="27,254,0,0" Name="btnSO1112A1" VerticalAlignment="Top" Width="84" />
+        <Button Content="SO111XD" Height="23" HorizontalAlignment="Left" Margin="29,166,0,0" Name="btnSO111XD" VerticalAlignment="Top" Width="75" />
+        <TextBox Height="134" HorizontalAlignment="Left" Margin="475,26,0,0" Name="TextBox1" VerticalAlignment="Top" Width="207" AcceptsReturn="True" />
+        <Button Content="CPEMAC" Height="23" HorizontalAlignment="Left" Margin="29,108,0,0" Name="btnCPEMAC" VerticalAlignment="Top" Width="111" />
+        <Button Content="Command" Height="23" HorizontalAlignment="Left" Margin="29,137,0,0" Name="Command" VerticalAlignment="Top" Width="102" />
+        <Button Content="Order Facility" Height="23" HorizontalAlignment="Left" Margin="159,158,0,0" Name="btnOrderFacility" VerticalAlignment="Top" Width="98" />
+        <Button Content="Copy Order" Height="23" HorizontalAlignment="Left" Margin="160,46,0,0" Name="btnCopyOrder" VerticalAlignment="Top" Width="75" />
+        <Button Content="ChangePeriod" Height="23" HorizontalAlignment="Left" Margin="160,76,0,0" Name="btnChangePeriod" VerticalAlignment="Top" Width="99" />
+        <Button Content="ChooseNextPeriod" Height="23" HorizontalAlignment="Left" Margin="161,103,0,0" Name="btnChooseNextPeriod" VerticalAlignment="Top" Width="125" />
+        <Button Content="CutDay" Height="23" HorizontalAlignment="Left" Margin="162,129,0,0" Name="btnCutDay" VerticalAlignment="Top" Width="93" />
+        <Button Content="Deposit" Height="23" HorizontalAlignment="Left" Margin="163,187,0,0" Name="btnDeposit" VerticalAlignment="Top" Width="75" />
+        <Button Content="DynamicUpdate"  Height="23"   Name="btnDynamicUpdate"  Width="112" Margin="164,216,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" />
+        <ListBox Height="117" HorizontalAlignment="Left" Margin="347,26,0,0" Name="lstEditMode" VerticalAlignment="Top" Width="122" />
+        <dxe:ComboBoxEdit HorizontalAlignment="Left" Margin="365,194,0,0" Name="ComboBoxEdit1" VerticalAlignment="Top" Width="150" />        
+        <dxg:GridControl AutoPopulateColumns="True" Height="193" HorizontalAlignment="Left" Margin="67,353,0,0" Name="GridControl1" VerticalAlignment="Top" Width="530">
+            <dxg:GridControl.Columns>
+                <dxg:GridColumn Name="col1" FieldName="Test1"  />
+                <dxg:GridColumn Name="col2" FieldName="Test2" />
+                <dxg:GridColumn Name="col3"  FieldName="Test3" />
+                
+            </dxg:GridControl.Columns>
+            <dxg:GridControl.View>
+                <dxg:TreeListView Name="TableView1" ShowTotalSummary="True"   KeyFieldName="Id"  ParentFieldName="ParentId" AutoWidth="True" ShowSearchPanelMode="Never" />
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+        <Grid Height="107" HorizontalAlignment="Left" Margin="369,240,0,0" Name="DynamicGridTest" VerticalAlignment="Top" Width="332"></Grid>
+        <Button Content="DynUpdateGrid" Height="23" HorizontalAlignment="Left" Margin="164,251,0,0" Name="btnDynUpdateGrid" VerticalAlignment="Top" Width="112" />
+        <Button Content="GetCustomer" Height="23" HorizontalAlignment="Left" Margin="279,166,0,0" Name="btnGetCustomer" VerticalAlignment="Top" Width="75" />
+        <Button Content="SaveText" Height="22" HorizontalAlignment="Left" Margin="279,216,0,0" Name="btnSaveText" VerticalAlignment="Top" Width="100" />
+        <Button Content="WriteText" Height="23" HorizontalAlignment="Left" Margin="279,251,0,0" Name="btnWriteText" VerticalAlignment="Top" Width="100" />
+        <Button Content="TextOut" Height="23" HorizontalAlignment="Left" Margin="254,292,0,0" Name="btnTextOut" VerticalAlignment="Top" Width="100" />
+        <Button Content="changeClctEn" Height="23" HorizontalAlignment="Left" Margin="672,394,0,0" Name="btnchangeClctEn" VerticalAlignment="Top" Width="117" />
+        <Button Content="EnterPay" Height="23" HorizontalAlignment="Left" Margin="29,280,0,0" Name="btnEnterPay" VerticalAlignment="Top" Width="82" />
+    </Grid>
+</UserControl>

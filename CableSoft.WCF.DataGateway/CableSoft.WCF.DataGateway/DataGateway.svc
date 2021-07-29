@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="CableSoft.WCF.DataGateway.DataGateway" CodeBehind="DataGateway.svc.vb" %>

@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{81B88521-D652-466D-A692-865BE370390B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CableSoft.WCF.DataGateway</RootNamespace>
+    <AssemblyName>CableSoft.WCF.DataGateway</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CableSoft.WCF.DataGateway.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CableSoft.WCF.DataGateway.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CableSoft.BLL.BatchBillingAPI">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.BatchBillingAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.BillingAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.BillingAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Dynamic.ConditionGrid">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Dynamic.ConditionGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Dynamic.DBStoreFunction">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Dynamic.DBStoreFunction.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Dynamic.DynamicUpdate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Dynamic.DynamicUpdate.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Dynamic.DynExecBatch">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Dynamic.DynExecBatch.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Dynamic.DynUpdateGrid">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Dynamic.DynUpdateGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Dynamic.DynUpdateGrid2">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Dynamic.DynUpdateGrid2.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Dynamic.Grid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Dynamic.Grid.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Dynamic.LinkProgram">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Dynamic.LinkProgram.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Dynamic.Menu">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Dynamic.Menu.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Dynamic.Report, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Dynamic.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Dynamic.TextFileIn">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Dynamic.TextFileIn.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Dynamic.TextFileOut, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Dynamic.TextFileOut.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Language.SO11, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Language.SO11.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Language.SO61, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Language.SO61.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Utility">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.BLL.Utility.GiAddress">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.BLL.Utility.GiAddress.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.INV.BLL.CreateInvoice, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\NewSO\Bin\Server\CableSoft.INV.BLL.CreateInvoice.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.INV.RIA.CreateInvoice.Web">
+      <HintPath>..\..\..\..\..\NewSO\Bin\Server\CableSoft.INV.RIA.CreateInvoice.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.RIA.Dynamic.Condition.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.RIA.Dynamic.Condition.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.RIA.Dynamic.ConditionGrid.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.RIA.Dynamic.ConditionGrid.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.RIA.Dynamic.DBStoreFunction.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.RIA.Dynamic.DBStoreFunction.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.RIA.Dynamic.DynamicUpdate.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.RIA.Dynamic.DynamicUpdate.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.RIA.Dynamic.DynExecBatch.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.RIA.Dynamic.DynExecBatch.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.RIA.Dynamic.DynUpdateGrid.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.RIA.Dynamic.DynUpdateGrid.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.RIA.Dynamic.DynUpdateGrid2.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.RIA.Dynamic.DynUpdateGrid2.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.RIA.Dynamic.Grid.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.RIA.Dynamic.Grid.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.RIA.Dynamic.LinkProgram.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.RIA.Dynamic.LinkProgram.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.RIA.Dynamic.Report.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.RIA.Dynamic.Report.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.RIA.Dynamic.TextFileIn.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.RIA.Dynamic.TextFileIn.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.RIA.Dynamic.TextFileOut.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.RIA.Dynamic.TextFileOut.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Address.MapAddress">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Address.MapAddress.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Basic.NewPreferential.ImportProGroup">
+      <HintPath>..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Basic.NewPreferential.ImportProGroup.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Batch.CreateWip">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Batch.CreateWip.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Billing.Batch.EnterPay">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Billing.Batch.EnterPay.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Billing.BatchProduceBill">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Billing.BatchProduceBill.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Billing.ChargeClose">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Billing.ChargeClose.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Billing.CounterPay, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Billing.CounterPay.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Billing.CreditCardOut">
+      <HintPath>..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Billing.CreditCardOut.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Billing.ManualNo">
+      <HintPath>..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Billing.ManualNo.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Billing.Simple, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Billing.Simple.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Contact, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Contact.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Customer">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Customer.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Customer.Account">
+      <HintPath>..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Customer.Account.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Customer.IntroMedia">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Customer.IntroMedia.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Customer.Invoice, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Customer.Invoice.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Facility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Facility.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Facility.Batch.Export, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Facility.Batch.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Facility.Batch.Import, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Facility.Batch.Import.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Facility.Batch.Pair, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Facility.Batch.Pair.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Facility.Command, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Facility.Command.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Facility.ControlCenter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Facility.ControlCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Order.Calculate">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Order.Calculate.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Order.ChooseProduct, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Order.ChooseProduct.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Order.CopyOrder">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Order.CopyOrder.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Order.Edit">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Order.Edit.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Utility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Wip.Batch.EnterCloseWip">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Wip.Batch.EnterCloseWip.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Wip.Batch.EnterFaciMAC">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Wip.Batch.EnterFaciMAC.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Wip.CallOk, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Wip.CallOk.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Wip.Install">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Wip.Install.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Wip.Install.ChannelReOpen">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Wip.Install.ChannelReOpen.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Wip.PR, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Wip.PR.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Wip.PR.ChannelClose">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Wip.PR.ChannelClose.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Wip.ResvDetail">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Wip.ResvDetail.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Wip.ResvTimePeriod">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Wip.ResvTimePeriod.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.BLL.Wip.Utility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.BLL.Wip.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Billing.ACHAuthIn.Web">
+      <HintPath>..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Billing.ACHAuthIn.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Billing.BatchProduceBill.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Billing.BatchProduceBill.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Billing.CounterPay.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Billing.CounterPay.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Billing.PeriodCycle.Batch.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Billing.PeriodCycle.Batch.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Billing.PostACHAuth.Web">
+      <HintPath>..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Billing.PostACHAuth.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Billing.Simple.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Billing.Simple.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Contact.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Contact.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Facility.Batch.Export.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Facility.Batch.Export.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Facility.Batch.Import.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Facility.Batch.Import.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Facility.Batch.Pair.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Facility.Batch.Pair.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Facility.ControlCenter.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Facility.ControlCenter.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Order.Calculate.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Order.Calculate.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Order.CopyOrder.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Order.CopyOrder.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Order.Edit.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Order.Edit.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Order.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Order.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Wip.Batch.EnterFaciMAC.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Wip.Batch.EnterFaciMAC.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Wip.CallOk.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Wip.CallOk.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Wip.Install.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Wip.Install.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Wip.PR.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Wip.PR.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Wip.ResvDetail.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Wip.ResvDetail.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.SO.RIA.Wip.ResvTimePeriod.Web">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.SO.RIA.Wip.ResvTimePeriod.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.Utility.Cryptography, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.Utility.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.Utility.DataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\NewSO\Bin\Server\CableSoft.Utility.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.Utility.FlowEngine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.Utility.FlowEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CableSoft.Utility.Heterogeneous, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\CableSoft.Utility.Heterogeneous.dll</HintPath>
+    </Reference>
+    <Reference Include="Devart.Data, Version=5.0.1878.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="Devart.Data.Oracle, Version=9.5.454.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="EnterpriseDB.EDBClient">
+      <HintPath>C:\Program Files (x86)\edb\dotnet\net451\EnterpriseDB.EDBClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=4.1.3.1, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.4.1.3.1\lib\net461\Npgsql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Silverlight.DataSetConnector, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\NewSO\Bin\Server\Silverlight.DataSetConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard1.1\System.Memory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.DomainServices.Hosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.DomainServices.Server, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.6.0\lib\netstandard1.0\System.Text.Encodings.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.4.6.0\lib\net461\System.Text.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.3\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.ServiceModel" />
+    <Import Include="System.ServiceModel.Web" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Runtime.Serialization" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataGateway.svc" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataGateway.svc.vb">
+      <DependentUpon>DataGateway.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="IDataGateway.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Log\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>6113</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:6113/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

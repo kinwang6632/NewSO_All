@@ -1,0 +1,15 @@
+﻿<Application   
+  x:Class="TestSilverlight2.App"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:my="clr-namespace:System;assembly=mscorlib">
+
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Assets/Styles.xaml"/>
+      </ResourceDictionary.MergedDictionaries>
+      <my:String x:Key="DevExpress.Xpf.License">9E-02-33-02-F1-8D-13-3D-80-5B-B2-59-2F-E8-08-E1-9C-20-E0-82</my:String>
+    </ResourceDictionary>
+  </Application.Resources>
+
+</Application>

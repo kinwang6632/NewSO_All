@@ -1,0 +1,160 @@
+<?xml version="1.0" standalone="yes"?>
+<ReportConditions>
+  <xs:schema id="ReportConditions" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="ReportConditions" msdata:IsDataSet="true" msdata:MainDataTable="Rpt" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Rpt">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MUSTPAYCREDIT" type="xs:long" minOccurs="0" />
+                <xs:element name="UNPAY" type="xs:long" minOccurs="0" />
+                <xs:element name="MINUSEDATE" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="OVERCREDIT" type="xs:long" minOccurs="0" />
+                <xs:element name="RANKX" type="xs:long" minOccurs="0" />
+                <xs:element name="NOPAYCREDIT" type="xs:long" minOccurs="0" />
+                <xs:element name="PREPAY" type="xs:long" minOccurs="0" />
+                <xs:element name="PRESENT" type="xs:long" minOccurs="0" />
+                <xs:element name="VODACCOUNTID" type="xs:long" minOccurs="0" />
+                <xs:element name="SERVICETYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="COMPCODE" type="xs:long" minOccurs="0" />
+                <xs:element name="CUSTID" type="xs:long" minOccurs="0" />
+                <xs:element name="SEQNO" type="xs:string" minOccurs="0" />
+                <xs:element name="FACICODE" type="xs:long" minOccurs="0" />
+                <xs:element name="FACISNO" type="xs:string" minOccurs="0" />
+                <xs:element name="RESEQNO" type="xs:string" minOccurs="0" />
+                <xs:element name="MUSTPAYCREDIT2" type="xs:long" minOccurs="0" />
+                <xs:element name="OVERCREDIT2" type="xs:long" minOccurs="0" />
+                <xs:element name="FLAG" type="xs:long" minOccurs="0" />
+                <xs:element name="PARA35" type="xs:long" minOccurs="0" />
+                <xs:element name="PARA36" type="xs:long" minOccurs="0" />
+                <xs:element name="SHOULDDATE" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ENDDATE" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Rpt>
+    <MUSTPAYCREDIT>100</MUSTPAYCREDIT>
+    <UNPAY>0</UNPAY>
+    <MINUSEDATE>2013-07-01T15:01:00+08:00</MINUSEDATE>
+    <OVERCREDIT>100</OVERCREDIT>
+    <RANKX>1</RANKX>
+    <NOPAYCREDIT>100</NOPAYCREDIT>
+    <PREPAY>0</PREPAY>
+    <PRESENT>0</PRESENT>
+    <VODACCOUNTID>393926</VODACCOUNTID>
+    <SERVICETYPE>D</SERVICETYPE>
+    <COMPCODE>11</COMPCODE>
+    <CUSTID>34</CUSTID>
+    <SEQNO>201310092520091</SEQNO>
+    <FACICODE>234</FACICODE>
+    <FACISNO>012201306030000359</FACISNO>
+    <MUSTPAYCREDIT2>250</MUSTPAYCREDIT2>
+    <OVERCREDIT2>100</OVERCREDIT2>
+    <FLAG>1</FLAG>
+    <PARA35>500</PARA35>
+    <PARA36>8</PARA36>
+    <SHOULDDATE>2015-03-16T00:00:00+08:00</SHOULDDATE>
+    <ENDDATE>2012-11-01T00:00:00+08:00</ENDDATE>
+  </Rpt>
+  <Rpt>
+    <MUSTPAYCREDIT>350</MUSTPAYCREDIT>
+    <UNPAY>0</UNPAY>
+    <MINUSEDATE>2016-03-15T17:58:54+08:00</MINUSEDATE>
+    <OVERCREDIT>0</OVERCREDIT>
+    <RANKX>1</RANKX>
+    <NOPAYCREDIT>350</NOPAYCREDIT>
+    <PREPAY>0</PREPAY>
+    <PRESENT>0</PRESENT>
+    <VODACCOUNTID>393915</VODACCOUNTID>
+    <SERVICETYPE>D</SERVICETYPE>
+    <COMPCODE>11</COMPCODE>
+    <CUSTID>677605</CUSTID>
+    <SEQNO>201001110258907</SEQNO>
+    <FACICODE>201</FACICODE>
+    <FACISNO>168298935667</FACISNO>
+    <MUSTPAYCREDIT2>350</MUSTPAYCREDIT2>
+    <OVERCREDIT2>0</OVERCREDIT2>
+    <FLAG>1</FLAG>
+    <PARA35>500</PARA35>
+    <PARA36>8</PARA36>
+    <SHOULDDATE>2015-03-16T00:00:00+08:00</SHOULDDATE>
+    <ENDDATE>2012-11-01T00:00:00+08:00</ENDDATE>
+  </Rpt>
+  <Rpt>
+    <MUSTPAYCREDIT>150</MUSTPAYCREDIT>
+    <UNPAY>0</UNPAY>
+    <MINUSEDATE>2013-07-01T15:01:00+08:00</MINUSEDATE>
+    <OVERCREDIT>0</OVERCREDIT>
+    <RANKX>1</RANKX>
+    <NOPAYCREDIT>150</NOPAYCREDIT>
+    <PREPAY>0</PREPAY>
+    <PRESENT>0</PRESENT>
+    <VODACCOUNTID>393927</VODACCOUNTID>
+    <SERVICETYPE>D</SERVICETYPE>
+    <COMPCODE>11</COMPCODE>
+    <CUSTID>34</CUSTID>
+    <SEQNO>201310152520097</SEQNO>
+    <FACICODE>234</FACICODE>
+    <FACISNO>012201306030000375</FACISNO>
+    <MUSTPAYCREDIT2>250</MUSTPAYCREDIT2>
+    <OVERCREDIT2>100</OVERCREDIT2>
+    <FLAG>1</FLAG>
+    <PARA35>500</PARA35>
+    <PARA36>8</PARA36>
+    <SHOULDDATE>2015-03-16T00:00:00+08:00</SHOULDDATE>
+    <ENDDATE>2012-11-01T00:00:00+08:00</ENDDATE>
+  </Rpt>
+  <Rpt>
+    <MUSTPAYCREDIT>600</MUSTPAYCREDIT>
+    <UNPAY>0</UNPAY>
+    <MINUSEDATE>2013-10-16T07:01:00+08:00</MINUSEDATE>
+    <OVERCREDIT>600</OVERCREDIT>
+    <RANKX>1</RANKX>
+    <NOPAYCREDIT>600</NOPAYCREDIT>
+    <PREPAY>0</PREPAY>
+    <PRESENT>0</PRESENT>
+    <VODACCOUNTID>393925</VODACCOUNTID>
+    <SERVICETYPE>D</SERVICETYPE>
+    <COMPCODE>11</COMPCODE>
+    <CUSTID>126</CUSTID>
+    <SEQNO>201310142520093</SEQNO>
+    <FACICODE>234</FACICODE>
+    <FACISNO>012201306030000354</FACISNO>
+    <MUSTPAYCREDIT2>800</MUSTPAYCREDIT2>
+    <OVERCREDIT2>600</OVERCREDIT2>
+    <FLAG>1</FLAG>
+    <PARA35>500</PARA35>
+    <PARA36>8</PARA36>
+    <SHOULDDATE>2015-03-16T00:00:00+08:00</SHOULDDATE>
+    <ENDDATE>2012-11-01T00:00:00+08:00</ENDDATE>
+  </Rpt>
+  <Rpt>
+    <MUSTPAYCREDIT>200</MUSTPAYCREDIT>
+    <UNPAY>0</UNPAY>
+    <MINUSEDATE>2016-03-15T17:58:54+08:00</MINUSEDATE>
+    <OVERCREDIT>0</OVERCREDIT>
+    <RANKX>1</RANKX>
+    <NOPAYCREDIT>200</NOPAYCREDIT>
+    <PREPAY>0</PREPAY>
+    <PRESENT>0</PRESENT>
+    <VODACCOUNTID>393941</VODACCOUNTID>
+    <SERVICETYPE>D</SERVICETYPE>
+    <COMPCODE>11</COMPCODE>
+    <CUSTID>126</CUSTID>
+    <SEQNO>201312102520159</SEQNO>
+    <FACICODE>234</FACICODE>
+    <RESEQNO>201310162520099</RESEQNO>
+    <MUSTPAYCREDIT2>200</MUSTPAYCREDIT2>
+    <OVERCREDIT2>0</OVERCREDIT2>
+    <FLAG>1</FLAG>
+    <PARA35>500</PARA35>
+    <PARA36>8</PARA36>
+    <SHOULDDATE>2015-03-16T00:00:00+08:00</SHOULDDATE>
+    <ENDDATE>2012-11-01T00:00:00+08:00</ENDDATE>
+  </Rpt>
+</ReportConditions>
